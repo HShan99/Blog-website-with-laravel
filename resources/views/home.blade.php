@@ -13,7 +13,17 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    {{ __('You are logged in!') }}
+                    <form>
+                        <div class="form-group mb-3">
+                          <label>Post Title</label>
+                          <input type="text" class="form-control"  placeholder="Enter Post title">
+                        </div>
+                        <div class="form-group mb-3 ">
+                            <label>Post Description</label>
+                            <textarea class="form-control" placeholder="Enter Post discription" rows="10"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                      </form>
 
                 </div>
             </div>
